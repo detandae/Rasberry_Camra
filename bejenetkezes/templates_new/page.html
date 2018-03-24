@@ -1,0 +1,20 @@
+<html>
+    <head>
+        Valami
+    </head>
+    <body>
+		<p><a href="{{ url_for('logout') }}">Logout</a></p>
+	<p><a href="{{ url_for('register') }}">Add New User</a></p>
+	<p><a href="{{ url_for('users') }}">Show all Users</a></p>
+    </body>
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+</html>
