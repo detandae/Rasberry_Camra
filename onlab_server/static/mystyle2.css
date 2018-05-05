@@ -1,0 +1,115 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.input_text1 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input_submit1 {
+    width: 100%;
+    background-color: rgb(0, 144, 255);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input_submit1:hover {
+    background-color: rgb(0, 0, 255);
+}
+.input_submit2 
+  {
+	width: 200px;
+    background-color: rgb(0, 144, 255);
+    color: green;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input_submit2:hover {
+    background-color: rgb(0, 0, 255);
+}
+
+
+.Belepes {
+	width: 25%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	margin: 5% 33% ;
+}
+.Hatter{
+	width: 100%;
+	height:100%;
+    position: absolute;
+	border: none;
+	 z-index: -1;
+	
+;}
+.Cimkek {
+	width: 25%;
+}
+
+a:link.myClass {
+    width: 86%;
+    background-color: rgb(0, 144, 255);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	 border-radius: 4px;
+
+} 
+a:visited.myClass {
+  width: 86%;
+    background-color: rgb(0, 144, 255);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	 border-radius: 4px;
+}
+a:hover.myClass {
+     background-color: rgb(0, 0, 255);
+}
+a:active.myClass {
+    background-color: rgb(0, 0, 255);
+}
+
+.textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+
+
+#bejelentkez {
+    color: rgb(0, 0, 255);
+}
+#cim
+{
+  color: rgb(8, 0, 64);
+}
+#Fooldal
+{
+ background-color: gb(0, 144, 255);
+  color: white;
+}

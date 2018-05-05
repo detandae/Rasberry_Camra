@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='mystyle2.css')}}">
+
+<title>Bejelentkezés</title>
+<link rel="icon" href="{{ url_for('static', filename='Camera.png')}}">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+<div class="Hatter">
+<img   src ="/static/statistics.jpg"   width="100%" height="100%">
+</div>
+<br/>
+
+<div class="Belepes">
+<h1 id="cim">Security Camera</h1>
+ <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(class_="input_text1" ,size=32) }}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(class_="input_text1",size=32) }}
+        </p>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p>{{ form.submit(class_="input_submit1") }}</p>
+    </form>
+
+	{% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+ <div>
+
+</body>
+</html>
+
+
+
+
+
+
+   
+   

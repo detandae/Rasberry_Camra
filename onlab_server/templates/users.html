@@ -1,0 +1,49 @@
+
+<html>
+<body>
+Users:
+number:
+ {{number}}
+
+
+<table style="width:50%">
+	 <tr>
+    	<th>Id</th>
+   	 <th>Username</th> 
+   	 <th>Email</th>
+ 	 </tr>
+	<form method="post">
+   	 {{ form.hidden_tag() }}
+	{% for user,subfield in users|zip(form)%}
+	<tr>
+		<th>{{ user.id  }} </th>
+		<th>{{ user.username }} </th>
+		<th>{{ user.email }} </th>
+		{% if user.id !=1 %}
+		<th> {{ subfield }}</th>
+		{% endif %}
+		
+	</tr>
+   	{% endfor %}
+	</table>
+
+
+
+
+
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}	
+
+	
+
+        <a href="{{ url_for('page') }}">Page</a>
+
+ </body>
+</html>
